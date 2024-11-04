@@ -1,7 +1,8 @@
 let obj = [];
 let indexProductoSeleccionado;
-let path = "http://localhost:8080/Proyecto1/modulos/modulosProductos_omar/";
-fetch(path+"datoSucursal.json")
+let path = "./datoSucursal.json";
+
+fetch(path)
         .then((response) => {
             return response.json();
         })
