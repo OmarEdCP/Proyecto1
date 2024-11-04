@@ -1,6 +1,6 @@
 let obj = [];
 let indexProductoSeleccionado;
-const path = "./datoProductos.json";
+let path = "./datoProductos.json";
 fetch(path)
         .then((response) => {
             return response.json();
