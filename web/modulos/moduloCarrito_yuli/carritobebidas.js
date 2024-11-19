@@ -1,9 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     let total = 0;
-    let path = "http://localhost:8080/Proyecto1/modulos/modulosProductos_yuli/";
+let path = "./productos.json";
 
 
-    fetch(path + "productos.json")
+    fetch(path)
             .then(response => response.json())
             .then(data => {
                 let productList = document.getElementById('product-list');
