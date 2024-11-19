@@ -1,9 +1,10 @@
 const comboContainer = document.getElementById("combo-container");
-const dataPath = "http://localhost:8080/Proyecto1/modulos/modulosCombosBarajas/";
+const dataPath = "./combos.json";
+
 let allCombos = [];
 
 // Cargar y mostrar los combos al cargar la página
-fetch(dataPath + "combos.json")
+fetch(dataPath)
     .then(response => response.json())
     .then(jsondata => {
         allCombos = jsondata.combos; // Guardar todos los combos para búsqueda

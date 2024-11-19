@@ -9,9 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     let cartItems = [];
     let total = 0;
     let combos = [];
-
+let path = "./combos.json";
     // Cargar los combos desde el JSON
-    fetch('combos.json')
+    fetch(path)
         .then(response => response.json())
         .then(data => {
             combos = data.combos;
