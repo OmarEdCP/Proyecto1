@@ -1,9 +1,9 @@
 let obj = []; // Arreglo que se llenará de objetos JSON
 let indexProductosSeleccionados; // Índice del arreglo
-let path = "http://localhost:8080/Proyecto1/modulos/modulosGestClientes/";
+let path = "./dato.json";
 
 // Cargar datos JSON al inicio
-fetch(path + "dato.json")
+fetch(path)
         .then((response) => response.json())
         .then((jsondata) => {
             obj = jsondata;

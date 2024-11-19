@@ -1,10 +1,10 @@
 let obj = [];
 let indexEmpleadoSeleccionado;
-const dataPath = "http://localhost:8080/Proyecto1/modulos/modulosEmpleados/";
+const dataPath = "./empleadosjson.json";
 const imgPath = "http://localhost:8080/Proyecto1/modulos/modulosEmpleados/imagenes/"; // Define imgPath aquí
 
 // Cargar los datos desde el archivo JSON
-fetch(dataPath + "empleadosjson.json")
+fetch(dataPath)
     .then(response => {
         if (!response.ok) {
             throw new Error('Error al cargar los datos: ' + response.statusText);
