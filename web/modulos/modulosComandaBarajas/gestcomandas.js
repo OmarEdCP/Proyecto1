@@ -2,7 +2,7 @@ let productosEnComanda = [];
 let comandas = [];
 let comandaSeleccionada = null;
 let productoSeleccionado = null;
-const dataPath = ""./comandas.json";
+const dataPath = "./comandas.json";
 // Cargar comandas desde el archivo JSON
 fetch(dataPath)
     .then(response => response.json())

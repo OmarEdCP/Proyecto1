@@ -1,6 +1,6 @@
 let obj = []; // arreglo que se llenará de objetos JSON
 let indexProductosSeleccionados; // es el índice del arreglo
-let path = "./"DatosUsuario.json""; // Cambia la ruta a relativa
+let path = "./DatosUsuario.json"; // Cambia la ruta a relativa
 
 // Cargar datos desde el archivo JSON en la ruta relativa
 fetch(path)
